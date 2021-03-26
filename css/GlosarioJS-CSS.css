@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+.header {
+    background-image: url("../img/portada.png");
+    height: 700px;
+}
+
+.glosary {
+    background-image: url("../img/fondo-glosario.jpg");
+}
+
+.logo {
+    display: flex;
+    padding: 50px;
+    color: blanchedalmond;
+    font-size: 80px;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+}
+
+div {
+    text-align: center;
+}
+
+.JSelement {
+    font-size: 35px;
+    border: solid;
+    border-radius: 25px;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: 100px;
+    padding: 10px;
+    box-shadow: 0px 10px 25px cyan;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+}
+
+.code {
+    font-size: 25px;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mystyle {
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    background-color: coral;
+    color: black;
+    font-size: 35px;
+  }
+
+  footer {
+      text-align: center;
+      background-color: darkcyan;
+  }

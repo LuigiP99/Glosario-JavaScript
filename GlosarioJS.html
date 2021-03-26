@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png" width="150" height="150">
+    <link rel="stylesheet" href="./css/GlosarioJS-CSS.css">
+    <script src="./js/GlosarioCodigoJS.js"></script>
+    <title>Glosario JavaScript</title>
+
+</head>
+<body>
+
+    <!-- Portada -->
+
+    <section>
+        <!-- <div class="background"><img src="./img/portada.png" alt="JS" width="1000px" height="500px"></div> -->
+        <div class="header">
+            <div class="logo">
+                <img src="./img/cover.png" alt="HTML5" width="130px" height="130px">
+                <div class="description">
+                    <h1>
+                       <strong>
+                           Glosario de elementos del <br/> lenguaje JavaScript
+                        </strong> 
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glosario -->
+
+    <section class="glosary">
+
+        <div class="JSelement">
+            <h2>Metodo abs()</h2>
+            <p>El método abs () devuelve el valor absoluto de un número.</p>
+            <button onclick="myFunction()">Probar aqui</button>
+            <p id="demo"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function myFunction() {
+                    document.getElementById("demo").innerHTML = Math.abs(-7.25);
+                  }</code>
+            </details> 
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo alert()</h2>
+            <p>Despliega un cuadro de alerta en el navegador</p>
+            <button onclick="FunctionAlert()">Probar aqui</button>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionAlert() {
+                    alert("Hola! Soy un cuadro de alerta!");
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Propiedad de navegador appCodeName</h2>
+            <p>Obtiene el nombre en clave de su navegador</p>
+            <button onclick="FuntionCodeName()">Probar aqui</button>
+            <p id="demo2"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FuntionCodeName() {
+                    var x = "Browser CodeName: " + navigator.appCodeName;
+                    document.getElementById("demo").innerHTML = x;
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Propiedad de body</h2>
+            <p>Cambia el color de fondo del actual documento</p>
+            <button onclick="FuntionBody()">Probar aqui</button>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FuntionBody() {
+                    document.body.style.backgroundColor = "gray";
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Propiedad characterSet</h2>
+            <p>Muestra la codificación de caracteres para este documento</p>
+            <button onclick="FunctionCharSet()">Probar aqui</button>
+            <p id="demo3"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionCharSet() {
+                    var x = document.characterSet;
+                    document.getElementById("demo3").innerHTML = x;
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Propiedad classList</h2>
+            <p>Agrega la clase "mystyle" a un elemento</p>
+            <p>Click en el boton para añadir la clase "mystyle" al DIV</p>
+            <button onclick="FunctionClassList()">Probar aqui</button>
+            <p></p>
+            <div id="myDIV">Soy un elemento DIV!</div>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionClassList() {
+                    document.getElementById("myDIV").classList.add("mystyle");
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo click()</h2>
+            <p>Simula un click del mouse al mover el puntero del mouse sobre una casilla de verificación</p>
+            <p>Pase el cursor sobre la casilla de verificación para simular un click del mouse</p>
+            <form>
+                <input type="checkbox" id="myCheck" onmouseover="FunctionClick()" onclick="alert('click event occured')">
+            </form>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <p>Codigo del checkbox:</p><code class="code">&lt;form&gt;
+                    &lt;input type="checkbox" id="myCheck" onmouseover="FunctionClick()" onclick="alert('click event occured')"&gt;
+                    &lt;/form&gt;</code>
+                <p>Codigo JavaScript:</p><code class="code">function FunctionClick() {
+                    document.getElementById("myCheck").click();
+                  }
+                </code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo confirm()</h2>
+            <p>Despliega una ventana de confirmacion</p>
+            <button onclick="FunctionConfirm()">Probar aqui</button>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionConfirm() {
+                    confirm("Presiona un boton!");
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Declaracion for para JavaScript</h2>
+            <p>Recorre un bloque de código cinco veces</p>
+            <button onclick="FunctionFor()">Probar aqui</button>
+            <p id="demo4"></p>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionFor() {
+                    var text = "";
+                    var i;
+                    for (i = 0; i < 5; i++) {
+                      text += "El numero es: " + i + "<br>";
+                    }
+                    document.getElementById("demo4").innerHTML = text;
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo getHours()</h2>
+            <p>Retorna la hora, acorde a la hora local</p>
+            <button onclick="FunctionHours()">Probar aqui</button>
+            <p id="demo5"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionHours() {
+                    var d = new Date();
+                    var n = d.getHours();
+                    document.getElementById("demo5").innerHTML = n;
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo log()</h2>
+            <p>Retorna el logaritmo natural de un numero, en este caso el numero "2"</p>
+            <button onclick="FunctionLog()">Prueba aqui</button>
+            <p id="demo6"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionLog() {
+                    document.getElementById("demo6").innerHTML = Math.log(2);
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo max()</h2>
+            <p>Retorna el numero con el mayor valor</p>
+            <p>Entre 5 y 10, ¿Que numero tiene mayor valor?</p>
+            <button onclick="FunctionMax()">Prueba aqui</button>
+            <p id="demo7"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionMax() {
+                    document.getElementById("demo7").innerHTML = Math.max(5, 10);
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo print()</h2>
+            <p>Permite imprimir el documento actual</p>
+            <button onclick="window.print()">Probar aqui</button>
+            <p></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">&lt;button onclick="window.print()"&gt;Probar aqui&lt;/button&gt;</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Funcion String()</h2>
+            <p>Convierte diferentes objetos en strings</p>
+            <button onclick="FunctionString()">Prueba aqui</button>
+            <p id="demo8"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionString() { <br>
+                    var x1 = Boolean(0);<br>
+                    var x2 = Boolean(1);<br>
+                    var x3 = new Date();<br>
+                    var x4 = "12345";<br>
+                    var x5 = 12345;<br>
+                  <br>
+                    var res =<br>
+                    String(x1) + "<br>" +
+                    String(x2) + "<br>" +
+                    String(x3) + "<br>" +
+                    String(x4) + "<br>" +
+                    String(x5);<br>
+                    document.getElementById("demo8").innerHTML = res;
+                  }</code>
+            </details>
+        </div>
+
+        <div class="JSelement">
+            <h2>Metodo sign()</h2>
+            <p>Encuentra si un numero es positivo o negativo</p>
+            <button onclick="FunctionSign()">Probar aqui</button>
+            <p id="demo9"></p>
+            <details>
+                <summary>Ver codigo aqui</summary><br>
+                <code class="code">function FunctionSign() {<br>
+                    var a = Math.sign(3);<br>
+                    var b = Math.sign(-3);<br>
+                    var c = Math.sign(0);<br>
+                    <br>
+                    var x = a + "<br>" + b + "<br>" + c;
+                    document.getElementById("demo9").innerHTML = x;
+                  }</code>
+            </details>
+        </div>
+
+    </section>
+
+    <footer>
+        <h1>Luigi Pircio <br> Informatica Quinto semestre <br> Programacion IV <br> IUTAV</h1>
+    </footer>
+    
+</body>
+</html>
